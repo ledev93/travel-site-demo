@@ -1143,6 +1143,7 @@ a{
     z-index: -10;
     position: relative;
     text-align: center;
+    margin-top: 90px;
   }
 
 @media (min-width: 800px){
@@ -1152,7 +1153,8 @@ a{
       z-index: 1;
       padding-top: 0;
       -webkit-transform: scale(1);
-              transform: scale(1)
+              transform: scale(1);
+      margin-top: 0
   }
     }
 
@@ -1234,5 +1236,18 @@ a{
             padding: 12px 0;
             background-color: transparent
     }
+    }
+
+.reveal-item{
+    opacity: 0;
+    transition: all 1.5s ease-out;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+
+.reveal-item--is-visible{
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
     }
 
